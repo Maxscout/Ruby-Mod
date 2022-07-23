@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "itsmaxscoutmods:ruby"
+    }
+  },
+  "result": {
+    "item": "itsmaxscoutmods:ruby_block",
+    "count": 1
+  },
+  "group": "itsmaxscoutmods"
+}
