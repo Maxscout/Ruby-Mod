@@ -3,11 +3,15 @@ package com.maxscout.mod.registry;
 import com.maxscout.mod.Main;
 
 import com.maxscout.mod.materials.RubyArmorMaterial;
+import com.maxscout.mod.tools.RubyToolMaterial;
+
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -19,6 +23,7 @@ public class ModItems {
     public static final Item RUBY_CHESTPLATE = new ArmorItem(RubyArmorMaterial, EquipmentSlot.CHEST, new Item.Settings().group(Main.ITEM_GROUP));
     public static final Item RUBY_LEGGINGS = new ArmorItem(RubyArmorMaterial, EquipmentSlot.LEGS, new Item.Settings().group(Main.ITEM_GROUP));
     public static final Item RUBY_BOOTS = new ArmorItem(RubyArmorMaterial, EquipmentSlot.FEET, new Item.Settings().group(Main.ITEM_GROUP));
+    public static ToolItem RUBY_SWORD = new SwordItem(RubyToolMaterial.INSTANCE, 6, -2.4F, new Item.Settings().group(Main.ITEM_GROUP));
 
     //Blocks
     public static final BlockItem RUBY_ORE = new BlockItem(ModBlocks.RUBY_ORE, new Item.Settings().group(Main.ITEM_GROUP));
@@ -34,6 +39,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_leggings"), RUBY_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_boots"), RUBY_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(Main.MOD_ID, "ruby_sword"), RUBY_SWORD);
     }
 
 }
